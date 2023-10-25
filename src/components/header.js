@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Main from "./main";
 import { Link } from "react-router-dom";
 
 const General = () => {
@@ -50,7 +49,9 @@ const General = () => {
             </div>
             <ul>
               <li>
-                <a>apply</a>
+                <Link rel="noreferrer" to={"/"}>
+                  apply
+                </Link>
               </li>
               <li onClick={openModal}>Login</li>
               <li>Donations</li>
@@ -135,11 +136,9 @@ const General = () => {
               <li className="nav-item">Faculty</li>
             </Link>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Research
-              </a>
-            </li>
+            <Link to={"/"}>
+              <li className="nav-item">Research </li>
+            </Link>
 
             <Link rel="noreferrer" to="about">
               <li className="nav-item">About</li>

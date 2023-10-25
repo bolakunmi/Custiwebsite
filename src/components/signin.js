@@ -31,7 +31,7 @@ const SignIn = () => {
   return (
     <React.Fragment>
       <div>
-        <img src={require("../pictures/mountain.jpg")} />
+        <img src={require("../pictures/mountain.jpg")} alt="background"/>
       </div>
       <div className="login">
         <form className="sizing loginform">

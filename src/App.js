@@ -1,4 +1,4 @@
-import React, { Children, useState } from "react";
+import React, { useState } from "react";
 import General from "./components/header.js";
 import Main from "./components/main.js";
 import About from "./components/About.js";
@@ -11,19 +11,17 @@ import SignIn from "./components/signin.js";
 import SignUp from "./components/signup.js";
 import "./App.css";
 import "./components/style.css";
-import { BrowserRouter as Router, Routes, Route, useHistory } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import User from "./components/user.js";
 
 export const UserdetailContext = React.createContext();
 
 function GeneralProvider({ children }) {
-  const [userdetail, setUserdetail] = useState(
-    {
-      name: "",
-      email: "",
-      password: "",
-    },
-  );
+  const [userdetail, setUserdetail] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
 
   return (
     <UserdetailContext.Provider value={{ userdetail, setUserdetail }}>

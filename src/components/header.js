@@ -82,8 +82,8 @@ const General = () => {
         </div>
       </nav>
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary smallscreen_navbar">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary smallscreen_navbar">
+        <div className="container-fluid">
           <Link to={"/"}>
             <div className="Title-container">
               <img
@@ -106,7 +106,7 @@ const General = () => {
             </div>
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -117,32 +117,32 @@ const General = () => {
               setShowNav(!showNav);
             }}
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
             {showNav}
           </button>
         </div>
 
         <div className="smallnavbar">
           <ul
-            class="navbar-nav "
+            className="navbar-nav "
             style={{ display: showNav ? "block" : "none" }}
           >
             <Link to={"/"}>
-              <li class="nav-item">Home</li>
+              <li className="nav-item">Home</li>
             </Link>
 
             <Link rel="noreferrer" to="faculty">
-              <li class="nav-item">Faculty</li>
+              <li className="nav-item">Faculty</li>
             </Link>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Research
               </a>
             </li>
 
             <Link rel="noreferrer" to="about">
-              <li class="nav-item">About</li>
+              <li className="nav-item">About</li>
             </Link>
 
             <li className="input-group mb-3">

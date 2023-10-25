@@ -33,44 +33,44 @@ const SignUp = () => {
     // email
     // phone number
     <React.Fragment>
-      <form class="row g-3 sizing">
-        <div class="col-md-4">
-          <label for="validationDefault01" class="form-label">
+      <form className="row g-3 sizing">
+        <div className="col-md-4">
+          <label for="validationDefault01" className="form-label">
             First name
           </label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="validationDefault01"
             placeholder="Firstname"
             required
           />
         </div>
 
-        <div class="col-md-4">
-          <label for="validationDefault02" class="form-label">
+        <div className="col-md-4">
+          <label for="validationDefault02" className="form-label">
             Last name
           </label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="validationDefault02"
             placeholder="Lastname"
             required
           />
         </div>
 
-        <div class="col-md-4">
-          <label for="validationDefaultUsername" class="form-label">
+        <div className="col-md-4">
+          <label for="validationDefaultUsername" className="form-label">
             Username
           </label>
-          <div class="input-group">
-            <span class="input-group-text" id="inputGroupPrepend2">
+          <div className="input-group">
+            <span className="input-group-text" id="inputGroupPrepend2">
               @
             </span>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="validationDefaultUsername"
               aria-describedby="inputGroupPrepend2"
               required
@@ -80,11 +80,11 @@ const SignUp = () => {
           </div>
         </div>
 
-        <div class=" col-md-6 ">
+        <div className=" col-md-6 ">
           <label for="floatingInput">Email address</label>
           <input
             type="email"
-            class="form-control"
+            className="form-control"
             id="floatingInput"
             placeholder="name@example.com"
             name="email"
@@ -92,11 +92,11 @@ const SignUp = () => {
             onChange={handleInputChange}
           />
         </div>
-        <div class="col-md-6">
+        <div className="col-md-6">
           <label for="floatingPassword">Password</label>
           <input
             type="password"
-            class="form-control"
+            className="form-control"
             id="floatingPassword"
             placeholder="Password"
             name="password"
@@ -105,13 +105,13 @@ const SignUp = () => {
           />
         </div>
 
-        <div class="col-md-4">
-          <label for="validationDefault06" class="form-label">
+        <div className="col-md-4">
+          <label for="validationDefault06" className="form-label">
             Phone number
           </label>
           <input
             type="number"
-            class="form-control"
+            className="form-control"
             id="validationDefault06"
             placeholder="08023456789"
             required
@@ -120,13 +120,13 @@ const SignUp = () => {
           />
         </div>
 
-        <div class="col-md-3">
-          <label for="validationDefault03" class="form-label">
+        <div className="col-md-3">
+          <label for="validationDefault03" className="form-label">
             Gender
           </label>
           <select
             type="text"
-            class="form-select"
+            className="form-select"
             id="validationDefault03"
             required
           >
@@ -137,11 +137,11 @@ const SignUp = () => {
             <option>Female</option>
           </select>
         </div>
-        <div class="col-md-3">
-          <label for="validationDefault04" class="form-label">
+        <div className="col-md-3">
+          <label for="validationDefault04" className="form-label">
             State of Origin
           </label>
-          <select class="form-select" id="validationDefault04" required>
+          <select className="form-select" id="validationDefault04" required>
             <option selected disabled value="">
               Choose...
             </option>
@@ -183,13 +183,13 @@ const SignUp = () => {
             <option value="Zamfara">Zamfara</option>
           </select>
         </div>
-        <div class="col-md-12">
-          <label for="validationDefault05" class="form-label">
+        <div className="col-md-12">
+          <label for="validationDefault05" className="form-label">
             Course of Study
           </label>
           <select
             type="text"
-            class="form-select"
+            className="form-select"
             id="validationDefault05"
             required
           >
@@ -206,22 +206,22 @@ const SignUp = () => {
             <option>Industrial and Production Engineering</option>
           </select>
         </div>
-        <div class="col-12">
-          <div class="form-check">
+        <div className="col-12">
+          <div className="form-check">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               value=""
               id="invalidCheck2"
               required
             />
-            <label class="form-check-label" for="invalidCheck2">
+            <label className="form-check-label" for="invalidCheck2">
               Agree to terms and conditions
             </label>
           </div>
         </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit" onClick={handleSubmit}>
+        <div className="col-12">
+          <button className="btn btn-primary" type="submit" onClick={handleSubmit}>
             <Link rel="noreferrer" to={`/signin/${userdetail.gmail}`}>
               Submit form
             </Link>

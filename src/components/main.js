@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 // import TrackVisibility from "react-on-screen";
 import VisibilitySensor from "react-visibility-sensor";
 
